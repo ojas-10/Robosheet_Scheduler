@@ -6738,3 +6738,697 @@ python /Users/ojas/Documents/firstrobo/tasks.py</msg>
 <status status="PASS" starttime="20240912 19:17:19.394" endtime="20240912 19:18:19.404"/>
 </iter>
 <iter>
+<var name="${i}">147</var>
+<kw name="Get Current Date" library="DateTime">
+<var>${current_time}</var>
+<arg>result_format=datetime</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<msg timestamp="20240912 19:18:19.407" level="INFO">${current_time} = 2024-09-12 19:18:19.407162</msg>
+<status status="PASS" starttime="20240912 19:18:19.406" endtime="20240912 19:18:19.407"/>
+</kw>
+<kw name="Convert Date" library="DateTime">
+<var>${formatted_time}</var>
+<arg>${current_time}</arg>
+<arg>result_format=%H:%M</arg>
+<doc>Converts between supported `date formats`.</doc>
+<msg timestamp="20240912 19:18:19.408" level="INFO">${formatted_time} = 19:18</msg>
+<status status="PASS" starttime="20240912 19:18:19.407" endtime="20240912 19:18:19.408"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Current time: ${formatted_time}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240912 19:18:19.408" endtime="20240912 19:18:19.408"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${formatted_time}' == '${SCHEDULED_TIME}' or '${formatted_time}' == '${MANUAL_RUN_TIME}'</arg>
+<arg>Run Python Script</arg>
+<arg>${formatted_time}</arg>
+<arg>ELSE</arg>
+<arg>Log To Console</arg>
+<arg>Not time to run script yet (${formatted_time})</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Not time to run script yet (${formatted_time})</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240912 19:18:19.409" endtime="20240912 19:18:19.409"/>
+</kw>
+<status status="PASS" starttime="20240912 19:18:19.408" endtime="20240912 19:18:19.409"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>60s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240912 19:19:19.412" level="INFO">Slept 1 minute</msg>
+<status status="PASS" starttime="20240912 19:18:19.409" endtime="20240912 19:19:19.414"/>
+</kw>
+<status status="PASS" starttime="20240912 19:18:19.405" endtime="20240912 19:19:19.414"/>
+</iter>
+<iter>
+<var name="${i}">148</var>
+<kw name="Get Current Date" library="DateTime">
+<var>${current_time}</var>
+<arg>result_format=datetime</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<msg timestamp="20240912 19:19:19.417" level="INFO">${current_time} = 2024-09-12 19:19:19.417146</msg>
+<status status="PASS" starttime="20240912 19:19:19.416" endtime="20240912 19:19:19.417"/>
+</kw>
+<kw name="Convert Date" library="DateTime">
+<var>${formatted_time}</var>
+<arg>${current_time}</arg>
+<arg>result_format=%H:%M</arg>
+<doc>Converts between supported `date formats`.</doc>
+<msg timestamp="20240912 19:19:19.418" level="INFO">${formatted_time} = 19:19</msg>
+<status status="PASS" starttime="20240912 19:19:19.417" endtime="20240912 19:19:19.418"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Current time: ${formatted_time}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240912 19:19:19.418" endtime="20240912 19:19:19.418"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${formatted_time}' == '${SCHEDULED_TIME}' or '${formatted_time}' == '${MANUAL_RUN_TIME}'</arg>
+<arg>Run Python Script</arg>
+<arg>${formatted_time}</arg>
+<arg>ELSE</arg>
+<arg>Log To Console</arg>
+<arg>Not time to run script yet (${formatted_time})</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Not time to run script yet (${formatted_time})</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240912 19:19:19.419" endtime="20240912 19:19:19.419"/>
+</kw>
+<status status="PASS" starttime="20240912 19:19:19.418" endtime="20240912 19:19:19.419"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>60s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240912 19:20:19.421" level="INFO">Slept 1 minute</msg>
+<status status="PASS" starttime="20240912 19:19:19.419" endtime="20240912 19:20:19.423"/>
+</kw>
+<status status="PASS" starttime="20240912 19:19:19.416" endtime="20240912 19:20:19.423"/>
+</iter>
+<iter>
+<var name="${i}">149</var>
+<kw name="Get Current Date" library="DateTime">
+<var>${current_time}</var>
+<arg>result_format=datetime</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<msg timestamp="20240912 19:20:19.426" level="INFO">${current_time} = 2024-09-12 19:20:19.425768</msg>
+<status status="PASS" starttime="20240912 19:20:19.425" endtime="20240912 19:20:19.426"/>
+</kw>
+<kw name="Convert Date" library="DateTime">
+<var>${formatted_time}</var>
+<arg>${current_time}</arg>
+<arg>result_format=%H:%M</arg>
+<doc>Converts between supported `date formats`.</doc>
+<msg timestamp="20240912 19:20:19.427" level="INFO">${formatted_time} = 19:20</msg>
+<status status="PASS" starttime="20240912 19:20:19.426" endtime="20240912 19:20:19.427"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Current time: ${formatted_time}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240912 19:20:19.427" endtime="20240912 19:20:19.427"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${formatted_time}' == '${SCHEDULED_TIME}' or '${formatted_time}' == '${MANUAL_RUN_TIME}'</arg>
+<arg>Run Python Script</arg>
+<arg>${formatted_time}</arg>
+<arg>ELSE</arg>
+<arg>Log To Console</arg>
+<arg>Not time to run script yet (${formatted_time})</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Not time to run script yet (${formatted_time})</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240912 19:20:19.428" endtime="20240912 19:20:19.428"/>
+</kw>
+<status status="PASS" starttime="20240912 19:20:19.427" endtime="20240912 19:20:19.428"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>60s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240912 19:21:19.432" level="INFO">Slept 1 minute</msg>
+<status status="PASS" starttime="20240912 19:20:19.428" endtime="20240912 19:21:19.434"/>
+</kw>
+<status status="PASS" starttime="20240912 19:20:19.424" endtime="20240912 19:21:19.434"/>
+</iter>
+<iter>
+<var name="${i}">150</var>
+<kw name="Get Current Date" library="DateTime">
+<var>${current_time}</var>
+<arg>result_format=datetime</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<msg timestamp="20240912 19:21:19.437" level="INFO">${current_time} = 2024-09-12 19:21:19.436863</msg>
+<status status="PASS" starttime="20240912 19:21:19.436" endtime="20240912 19:21:19.437"/>
+</kw>
+<kw name="Convert Date" library="DateTime">
+<var>${formatted_time}</var>
+<arg>${current_time}</arg>
+<arg>result_format=%H:%M</arg>
+<doc>Converts between supported `date formats`.</doc>
+<msg timestamp="20240912 19:21:19.437" level="INFO">${formatted_time} = 19:21</msg>
+<status status="PASS" starttime="20240912 19:21:19.437" endtime="20240912 19:21:19.437"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Current time: ${formatted_time}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240912 19:21:19.438" endtime="20240912 19:21:19.438"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${formatted_time}' == '${SCHEDULED_TIME}' or '${formatted_time}' == '${MANUAL_RUN_TIME}'</arg>
+<arg>Run Python Script</arg>
+<arg>${formatted_time}</arg>
+<arg>ELSE</arg>
+<arg>Log To Console</arg>
+<arg>Not time to run script yet (${formatted_time})</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Not time to run script yet (${formatted_time})</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240912 19:21:19.439" endtime="20240912 19:21:19.439"/>
+</kw>
+<status status="PASS" starttime="20240912 19:21:19.438" endtime="20240912 19:21:19.439"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>60s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240912 19:22:19.442" level="INFO">Slept 1 minute</msg>
+<status status="PASS" starttime="20240912 19:21:19.439" endtime="20240912 19:22:19.444"/>
+</kw>
+<status status="PASS" starttime="20240912 19:21:19.436" endtime="20240912 19:22:19.444"/>
+</iter>
+<iter>
+<var name="${i}">151</var>
+<kw name="Get Current Date" library="DateTime">
+<var>${current_time}</var>
+<arg>result_format=datetime</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<msg timestamp="20240912 19:22:19.447" level="INFO">${current_time} = 2024-09-12 19:22:19.446775</msg>
+<status status="PASS" starttime="20240912 19:22:19.446" endtime="20240912 19:22:19.447"/>
+</kw>
+<kw name="Convert Date" library="DateTime">
+<var>${formatted_time}</var>
+<arg>${current_time}</arg>
+<arg>result_format=%H:%M</arg>
+<doc>Converts between supported `date formats`.</doc>
+<msg timestamp="20240912 19:22:19.448" level="INFO">${formatted_time} = 19:22</msg>
+<status status="PASS" starttime="20240912 19:22:19.447" endtime="20240912 19:22:19.448"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Current time: ${formatted_time}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240912 19:22:19.448" endtime="20240912 19:22:19.448"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${formatted_time}' == '${SCHEDULED_TIME}' or '${formatted_time}' == '${MANUAL_RUN_TIME}'</arg>
+<arg>Run Python Script</arg>
+<arg>${formatted_time}</arg>
+<arg>ELSE</arg>
+<arg>Log To Console</arg>
+<arg>Not time to run script yet (${formatted_time})</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Not time to run script yet (${formatted_time})</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240912 19:22:19.453" endtime="20240912 19:22:19.453"/>
+</kw>
+<status status="PASS" starttime="20240912 19:22:19.448" endtime="20240912 19:22:19.453"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>60s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240912 19:23:19.456" level="INFO">Slept 1 minute</msg>
+<status status="PASS" starttime="20240912 19:22:19.453" endtime="20240912 19:23:19.457"/>
+</kw>
+<status status="PASS" starttime="20240912 19:22:19.445" endtime="20240912 19:23:19.457"/>
+</iter>
+<iter>
+<var name="${i}">152</var>
+<kw name="Get Current Date" library="DateTime">
+<var>${current_time}</var>
+<arg>result_format=datetime</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<msg timestamp="20240912 19:23:19.458" level="INFO">${current_time} = 2024-09-12 19:23:19.458231</msg>
+<status status="PASS" starttime="20240912 19:23:19.457" endtime="20240912 19:23:19.458"/>
+</kw>
+<kw name="Convert Date" library="DateTime">
+<var>${formatted_time}</var>
+<arg>${current_time}</arg>
+<arg>result_format=%H:%M</arg>
+<doc>Converts between supported `date formats`.</doc>
+<msg timestamp="20240912 19:23:19.459" level="INFO">${formatted_time} = 19:23</msg>
+<status status="PASS" starttime="20240912 19:23:19.459" endtime="20240912 19:23:19.459"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Current time: ${formatted_time}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240912 19:23:19.459" endtime="20240912 19:23:19.459"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${formatted_time}' == '${SCHEDULED_TIME}' or '${formatted_time}' == '${MANUAL_RUN_TIME}'</arg>
+<arg>Run Python Script</arg>
+<arg>${formatted_time}</arg>
+<arg>ELSE</arg>
+<arg>Log To Console</arg>
+<arg>Not time to run script yet (${formatted_time})</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Not time to run script yet (${formatted_time})</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240912 19:23:19.460" endtime="20240912 19:23:19.460"/>
+</kw>
+<status status="PASS" starttime="20240912 19:23:19.459" endtime="20240912 19:23:19.460"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>60s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240912 19:24:19.463" level="INFO">Slept 1 minute</msg>
+<status status="PASS" starttime="20240912 19:23:19.460" endtime="20240912 19:24:19.465"/>
+</kw>
+<status status="PASS" starttime="20240912 19:23:19.457" endtime="20240912 19:24:19.466"/>
+</iter>
+<iter>
+<var name="${i}">153</var>
+<kw name="Get Current Date" library="DateTime">
+<var>${current_time}</var>
+<arg>result_format=datetime</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<msg timestamp="20240912 19:24:19.468" level="INFO">${current_time} = 2024-09-12 19:24:19.467871</msg>
+<status status="PASS" starttime="20240912 19:24:19.467" endtime="20240912 19:24:19.468"/>
+</kw>
+<kw name="Convert Date" library="DateTime">
+<var>${formatted_time}</var>
+<arg>${current_time}</arg>
+<arg>result_format=%H:%M</arg>
+<doc>Converts between supported `date formats`.</doc>
+<msg timestamp="20240912 19:24:19.469" level="INFO">${formatted_time} = 19:24</msg>
+<status status="PASS" starttime="20240912 19:24:19.468" endtime="20240912 19:24:19.469"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Current time: ${formatted_time}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240912 19:24:19.469" endtime="20240912 19:24:19.470"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${formatted_time}' == '${SCHEDULED_TIME}' or '${formatted_time}' == '${MANUAL_RUN_TIME}'</arg>
+<arg>Run Python Script</arg>
+<arg>${formatted_time}</arg>
+<arg>ELSE</arg>
+<arg>Log To Console</arg>
+<arg>Not time to run script yet (${formatted_time})</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Not time to run script yet (${formatted_time})</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240912 19:24:19.470" endtime="20240912 19:24:19.471"/>
+</kw>
+<status status="PASS" starttime="20240912 19:24:19.470" endtime="20240912 19:24:19.471"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>60s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240912 19:25:19.471" level="INFO">Slept 1 minute</msg>
+<status status="PASS" starttime="20240912 19:24:19.471" endtime="20240912 19:25:19.472"/>
+</kw>
+<status status="PASS" starttime="20240912 19:24:19.466" endtime="20240912 19:25:19.472"/>
+</iter>
+<iter>
+<var name="${i}">154</var>
+<kw name="Get Current Date" library="DateTime">
+<var>${current_time}</var>
+<arg>result_format=datetime</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<msg timestamp="20240912 19:25:19.472" level="INFO">${current_time} = 2024-09-12 19:25:19.472081</msg>
+<status status="PASS" starttime="20240912 19:25:19.472" endtime="20240912 19:25:19.472"/>
+</kw>
+<kw name="Convert Date" library="DateTime">
+<var>${formatted_time}</var>
+<arg>${current_time}</arg>
+<arg>result_format=%H:%M</arg>
+<doc>Converts between supported `date formats`.</doc>
+<msg timestamp="20240912 19:25:19.473" level="INFO">${formatted_time} = 19:25</msg>
+<status status="PASS" starttime="20240912 19:25:19.472" endtime="20240912 19:25:19.473"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Current time: ${formatted_time}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240912 19:25:19.473" endtime="20240912 19:25:19.473"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${formatted_time}' == '${SCHEDULED_TIME}' or '${formatted_time}' == '${MANUAL_RUN_TIME}'</arg>
+<arg>Run Python Script</arg>
+<arg>${formatted_time}</arg>
+<arg>ELSE</arg>
+<arg>Log To Console</arg>
+<arg>Not time to run script yet (${formatted_time})</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Not time to run script yet (${formatted_time})</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240912 19:25:19.473" endtime="20240912 19:25:19.475"/>
+</kw>
+<status status="PASS" starttime="20240912 19:25:19.473" endtime="20240912 19:25:19.475"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>60s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240912 19:26:19.478" level="INFO">Slept 1 minute</msg>
+<status status="PASS" starttime="20240912 19:25:19.475" endtime="20240912 19:26:19.480"/>
+</kw>
+<status status="PASS" starttime="20240912 19:25:19.472" endtime="20240912 19:26:19.480"/>
+</iter>
+<iter>
+<var name="${i}">155</var>
+<kw name="Get Current Date" library="DateTime">
+<var>${current_time}</var>
+<arg>result_format=datetime</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<msg timestamp="20240912 19:26:19.483" level="INFO">${current_time} = 2024-09-12 19:26:19.482977</msg>
+<status status="PASS" starttime="20240912 19:26:19.482" endtime="20240912 19:26:19.483"/>
+</kw>
+<kw name="Convert Date" library="DateTime">
+<var>${formatted_time}</var>
+<arg>${current_time}</arg>
+<arg>result_format=%H:%M</arg>
+<doc>Converts between supported `date formats`.</doc>
+<msg timestamp="20240912 19:26:19.484" level="INFO">${formatted_time} = 19:26</msg>
+<status status="PASS" starttime="20240912 19:26:19.483" endtime="20240912 19:26:19.484"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Current time: ${formatted_time}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240912 19:26:19.484" endtime="20240912 19:26:19.484"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${formatted_time}' == '${SCHEDULED_TIME}' or '${formatted_time}' == '${MANUAL_RUN_TIME}'</arg>
+<arg>Run Python Script</arg>
+<arg>${formatted_time}</arg>
+<arg>ELSE</arg>
+<arg>Log To Console</arg>
+<arg>Not time to run script yet (${formatted_time})</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Not time to run script yet (${formatted_time})</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240912 19:26:19.485" endtime="20240912 19:26:19.485"/>
+</kw>
+<status status="PASS" starttime="20240912 19:26:19.484" endtime="20240912 19:26:19.485"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>60s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240912 19:27:19.487" level="INFO">Slept 1 minute</msg>
+<status status="PASS" starttime="20240912 19:26:19.485" endtime="20240912 19:27:19.489"/>
+</kw>
+<status status="PASS" starttime="20240912 19:26:19.482" endtime="20240912 19:27:19.489"/>
+</iter>
+<iter>
+<var name="${i}">156</var>
+<kw name="Get Current Date" library="DateTime">
+<var>${current_time}</var>
+<arg>result_format=datetime</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<msg timestamp="20240912 19:27:19.491" level="INFO">${current_time} = 2024-09-12 19:27:19.491180</msg>
+<status status="PASS" starttime="20240912 19:27:19.491" endtime="20240912 19:27:19.491"/>
+</kw>
+<kw name="Convert Date" library="DateTime">
+<var>${formatted_time}</var>
+<arg>${current_time}</arg>
+<arg>result_format=%H:%M</arg>
+<doc>Converts between supported `date formats`.</doc>
+<msg timestamp="20240912 19:27:19.492" level="INFO">${formatted_time} = 19:27</msg>
+<status status="PASS" starttime="20240912 19:27:19.492" endtime="20240912 19:27:19.492"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Current time: ${formatted_time}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240912 19:27:19.492" endtime="20240912 19:27:19.493"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${formatted_time}' == '${SCHEDULED_TIME}' or '${formatted_time}' == '${MANUAL_RUN_TIME}'</arg>
+<arg>Run Python Script</arg>
+<arg>${formatted_time}</arg>
+<arg>ELSE</arg>
+<arg>Log To Console</arg>
+<arg>Not time to run script yet (${formatted_time})</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Not time to run script yet (${formatted_time})</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240912 19:27:19.494" endtime="20240912 19:27:19.495"/>
+</kw>
+<status status="PASS" starttime="20240912 19:27:19.493" endtime="20240912 19:27:19.495"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>60s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240912 19:28:19.498" level="INFO">Slept 1 minute</msg>
+<status status="PASS" starttime="20240912 19:27:19.495" endtime="20240912 19:28:19.499"/>
+</kw>
+<status status="PASS" starttime="20240912 19:27:19.490" endtime="20240912 19:28:19.500"/>
+</iter>
+<iter>
+<var name="${i}">157</var>
+<kw name="Get Current Date" library="DateTime">
+<var>${current_time}</var>
+<arg>result_format=datetime</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<msg timestamp="20240912 19:28:19.502" level="INFO">${current_time} = 2024-09-12 19:28:19.501908</msg>
+<status status="PASS" starttime="20240912 19:28:19.501" endtime="20240912 19:28:19.502"/>
+</kw>
+<kw name="Convert Date" library="DateTime">
+<var>${formatted_time}</var>
+<arg>${current_time}</arg>
+<arg>result_format=%H:%M</arg>
+<doc>Converts between supported `date formats`.</doc>
+<msg timestamp="20240912 19:28:19.503" level="INFO">${formatted_time} = 19:28</msg>
+<status status="PASS" starttime="20240912 19:28:19.502" endtime="20240912 19:28:19.503"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Current time: ${formatted_time}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240912 19:28:19.503" endtime="20240912 19:28:19.503"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${formatted_time}' == '${SCHEDULED_TIME}' or '${formatted_time}' == '${MANUAL_RUN_TIME}'</arg>
+<arg>Run Python Script</arg>
+<arg>${formatted_time}</arg>
+<arg>ELSE</arg>
+<arg>Log To Console</arg>
+<arg>Not time to run script yet (${formatted_time})</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Not time to run script yet (${formatted_time})</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240912 19:28:19.504" endtime="20240912 19:28:19.504"/>
+</kw>
+<status status="PASS" starttime="20240912 19:28:19.503" endtime="20240912 19:28:19.504"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>60s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240912 19:29:19.512" level="INFO">Slept 1 minute</msg>
+<status status="PASS" starttime="20240912 19:28:19.504" endtime="20240912 19:29:19.517"/>
+</kw>
+<status status="PASS" starttime="20240912 19:28:19.501" endtime="20240912 19:29:19.518"/>
+</iter>
+<iter>
+<var name="${i}">158</var>
+<kw name="Get Current Date" library="DateTime">
+<var>${current_time}</var>
+<arg>result_format=datetime</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<msg timestamp="20240912 19:29:19.523" level="INFO">${current_time} = 2024-09-12 19:29:19.522180</msg>
+<status status="PASS" starttime="20240912 19:29:19.520" endtime="20240912 19:29:19.523"/>
+</kw>
+<kw name="Convert Date" library="DateTime">
+<var>${formatted_time}</var>
+<arg>${current_time}</arg>
+<arg>result_format=%H:%M</arg>
+<doc>Converts between supported `date formats`.</doc>
+<msg timestamp="20240912 19:29:19.524" level="INFO">${formatted_time} = 19:29</msg>
+<status status="PASS" starttime="20240912 19:29:19.523" endtime="20240912 19:29:19.524"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Current time: ${formatted_time}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240912 19:29:19.524" endtime="20240912 19:29:19.525"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${formatted_time}' == '${SCHEDULED_TIME}' or '${formatted_time}' == '${MANUAL_RUN_TIME}'</arg>
+<arg>Run Python Script</arg>
+<arg>${formatted_time}</arg>
+<arg>ELSE</arg>
+<arg>Log To Console</arg>
+<arg>Not time to run script yet (${formatted_time})</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Not time to run script yet (${formatted_time})</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240912 19:29:19.528" endtime="20240912 19:29:19.529"/>
+</kw>
+<status status="PASS" starttime="20240912 19:29:19.525" endtime="20240912 19:29:19.529"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>60s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240912 19:30:19.531" level="INFO">Slept 1 minute</msg>
+<status status="PASS" starttime="20240912 19:29:19.529" endtime="20240912 19:30:19.533"/>
+</kw>
+<status status="PASS" starttime="20240912 19:29:19.519" endtime="20240912 19:30:19.533"/>
+</iter>
+<iter>
+<var name="${i}">159</var>
+<kw name="Get Current Date" library="DateTime">
+<var>${current_time}</var>
+<arg>result_format=datetime</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<msg timestamp="20240912 19:30:19.535" level="INFO">${current_time} = 2024-09-12 19:30:19.535229</msg>
+<status status="PASS" starttime="20240912 19:30:19.534" endtime="20240912 19:30:19.535"/>
+</kw>
+<kw name="Convert Date" library="DateTime">
+<var>${formatted_time}</var>
+<arg>${current_time}</arg>
+<arg>result_format=%H:%M</arg>
+<doc>Converts between supported `date formats`.</doc>
+<msg timestamp="20240912 19:30:19.536" level="INFO">${formatted_time} = 19:30</msg>
+<status status="PASS" starttime="20240912 19:30:19.536" endtime="20240912 19:30:19.536"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Current time: ${formatted_time}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240912 19:30:19.536" endtime="20240912 19:30:19.537"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${formatted_time}' == '${SCHEDULED_TIME}' or '${formatted_time}' == '${MANUAL_RUN_TIME}'</arg>
+<arg>Run Python Script</arg>
+<arg>${formatted_time}</arg>
+<arg>ELSE</arg>
+<arg>Log To Console</arg>
+<arg>Not time to run script yet (${formatted_time})</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Not time to run script yet (${formatted_time})</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240912 19:30:19.540" endtime="20240912 19:30:19.540"/>
+</kw>
+<status status="PASS" starttime="20240912 19:30:19.537" endtime="20240912 19:30:19.540"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>60s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240912 19:31:19.542" level="INFO">Slept 1 minute</msg>
+<status status="PASS" starttime="20240912 19:30:19.540" endtime="20240912 19:31:19.543"/>
+</kw>
+<status status="PASS" starttime="20240912 19:30:19.534" endtime="20240912 19:31:19.544"/>
+</iter>
+<iter>
+<var name="${i}">160</var>
+<kw name="Get Current Date" library="DateTime">
+<var>${current_time}</var>
+<arg>result_format=datetime</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<msg timestamp="20240912 19:31:19.546" level="INFO">${current_time} = 2024-09-12 19:31:19.546142</msg>
+<status status="PASS" starttime="20240912 19:31:19.546" endtime="20240912 19:31:19.546"/>
+</kw>
+<kw name="Convert Date" library="DateTime">
+<var>${formatted_time}</var>
+<arg>${current_time}</arg>
+<arg>result_format=%H:%M</arg>
+<doc>Converts between supported `date formats`.</doc>
+<msg timestamp="20240912 19:31:19.547" level="INFO">${formatted_time} = 19:31</msg>
+<status status="PASS" starttime="20240912 19:31:19.546" endtime="20240912 19:31:19.547"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Current time: ${formatted_time}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240912 19:31:19.547" endtime="20240912 19:31:19.547"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${formatted_time}' == '${SCHEDULED_TIME}' or '${formatted_time}' == '${MANUAL_RUN_TIME}'</arg>
+<arg>Run Python Script</arg>
+<arg>${formatted_time}</arg>
+<arg>ELSE</arg>
+<arg>Log To Console</arg>
+<arg>Not time to run script yet (${formatted_time})</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Not time to run script yet (${formatted_time})</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240912 19:31:19.548" endtime="20240912 19:31:19.548"/>
+</kw>
+<status status="PASS" starttime="20240912 19:31:19.547" endtime="20240912 19:31:19.548"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>60s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240912 19:32:19.552" level="INFO">Slept 1 minute</msg>
+<status status="PASS" starttime="20240912 19:31:19.549" endtime="20240912 19:32:19.554"/>
+</kw>
+<status status="PASS" starttime="20240912 19:31:19.545" endtime="20240912 19:32:19.554"/>
+</iter>
+<iter>
+<var name="${i}">161</var>
+<kw name="Get Current Date" library="DateTime">
+<var>${current_time}</var>
+<arg>result_format=datetime</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<msg timestamp="20240912 19:32:19.557" level="INFO">${current_time} = 2024-09-12 19:32:19.556788</msg>
+<status status="PASS" starttime="20240912 19:32:19.556" endtime="20240912 19:32:19.557"/>
+</kw>
+<kw name="Convert Date" library="DateTime">
+<var>${formatted_time}</var>
+<arg>${current_time}</arg>
+<arg>result_format=%H:%M</arg>
+<doc>Converts between supported `date formats`.</doc>
+<msg timestamp="20240912 19:32:19.558" level="INFO">${formatted_time} = 19:32</msg>
+<status status="PASS" starttime="20240912 19:32:19.557" endtime="20240912 19:32:19.558"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Current time: ${formatted_time}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240912 19:32:19.558" endtime="20240912 19:32:19.558"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${formatted_time}' == '${SCHEDULED_TIME}' or '${formatted_time}' == '${MANUAL_RUN_TIME}'</arg>
+<arg>Run Python Script</arg>
+<arg>${formatted_time}</arg>
+<arg>ELSE</arg>
+<arg>Log To Console</arg>
+<arg>Not time to run script yet (${formatted_time})</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Not time to run script yet (${formatted_time})</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240912 19:32:19.559" endtime="20240912 19:32:19.559"/>
+</kw>
+<status status="PASS" starttime="20240912 19:32:19.558" endtime="20240912 19:32:19.559"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>60s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240912 19:33:19.565" level="INFO">Slept 1 minute</msg>
+<status status="PASS" starttime="20240912 19:32:19.559" endtime="20240912 19:33:19.569"/>
+</kw>
+<status status="PASS" starttime="20240912 19:32:19.555" endtime="20240912 19:33:19.570"/>
+</iter>
+<iter>
+<var name="${i}">162</var>
+<kw name="Get Current Date" library="DateTime">
+<var>${current_time}</var>
+<arg>result_format=datetime</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<msg timestamp="20240912 19:33:19.574" level="INFO">${current_time} = 2024-09-12 19:33:19.573468</msg>
+<status status="PASS" starttime="20240912 19:33:19.573" endtime="20240912 19:33:19.574"/>
+</kw>
+<kw name="Convert Date" library="DateTime">
+<var>${formatted_time}</var>
+<arg>${current_time}</arg>
+<arg>result_format=%H:%M</arg>
+<doc>Converts between supported `date formats`.</doc>
+<msg timestamp="20240912 19:33:19.574" level="INFO">${formatted_time} = 19:33</msg>
+<status status="PASS" starttime="20240912 19:33:19.574" endtime="20240912 19:33:19.574"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Current time: ${formatted_time}</arg>
+<doc>
